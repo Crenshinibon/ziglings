@@ -17,5 +17,8 @@
 const std = @import("std");
 
 pub fn main() void {
-    std.debug.print("Hello world!\n", .{});
+    const a_number: i64 = 4 - 4;
+    const a_better_number: u64 = @intCast(a_number);
+
+    std.debug.print("Hello world! {} {} \n", .{ a_number, a_better_number });
 }
